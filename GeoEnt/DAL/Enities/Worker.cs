@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace DAL.Enities
 {
-    class Workers
+    class Worker
     {
         public int id;
         public string name;
-        public virtual Tests Test { get; set; }
+        public virtual Test Test { get; set; }
 
     }
 }

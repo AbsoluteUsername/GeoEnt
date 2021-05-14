@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace DAL.Enities
 {
-    class Tests
+    class Test
     {
         public int Id;
-        public virtual Reagents Reagent { get; set; }
-        public virtual Workers Worker { get; set; }
+        public virtual Reagent Reagent { get; set; }
+        public virtual Worker Worker { get; set; }
 
     }
 }
