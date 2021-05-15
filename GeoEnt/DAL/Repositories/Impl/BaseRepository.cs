@@ -32,12 +32,9 @@ namespace DAL.Repositories.Impl
 
         public IEnumerable<T> Find(Func<T, bool> predicate)
         {
-            int pageNumber = 0;
-            int pageSize = 10;
+        
             return
-               _set.Where(predicate)
-                   .Skip(pageSize * pageNumber)
-                   .Take(pageNumber)
+               _set.Where(predicate)               
                    .ToList();
         }
 

@@ -6,8 +6,8 @@ namespace DAL.Enities
 {
     public class Worker
     {
-        public int id;
-        public string name;
+        public int Id { get; set; }
+        public string Name { get; set; }
         public virtual Test Test { get; set; }
 
 

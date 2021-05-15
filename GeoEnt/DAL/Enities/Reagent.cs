@@ -12,8 +12,8 @@ namespace DAL.Enities
     public class Reagent 
     {
     
-        public int Id;
-        public string Name;
+        public int Id { get; set; }
+        public string Name { get; set; }
         public virtual Test Test{ get; set; }
    
 
