@@ -2,7 +2,7 @@
 
 namespace DAL.Repositories.Interfaces
 {
-    interface IWorkerRepository
+    public interface IWorkerRepository
         : IRepository<Worker>
     {
     }

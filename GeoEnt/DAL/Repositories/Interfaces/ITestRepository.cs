@@ -2,7 +2,7 @@
 
 namespace DAL.Repositories.Interfaces
 {
-    interface ITestRepository
+    public interface ITestRepository
         : IRepository<Test>
     {
     }
