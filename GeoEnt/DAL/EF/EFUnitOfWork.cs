@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace DAL.EF
 {
-    public class EFUnitOfWork : IDisposable
+    public class EFUnitOfWork : IUnitOfWork
     {
         private GeoEntContext db;
         private TestRepository testRepository;
@@ -22,7 +22,7 @@ namespace DAL.EF
         {
             db = new GeoEntContext(options);
         }
-        public IRepository<Test> Tests
+        public ITestRepository Tests
         {
             get
             {
@@ -31,7 +31,7 @@ namespace DAL.EF
                 return testRepository;
             }
         }
-        public IRepository<Reagent> Reagents
+        public IReagentRepository Reagents
         {
             get
             {
@@ -40,7 +40,7 @@ namespace DAL.EF
                 return reagentRepository;
             }
         }
-        public IRepository<Worker> Workers
+        public IWorkerRepository Workers
         {
             get
             {
