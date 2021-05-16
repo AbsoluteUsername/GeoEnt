@@ -42,14 +42,18 @@ namespace BLL.Tests
             SecurityContext.SetUser(user);
             var streetService = GetWorkerService();
             var actualStreetDto = streetService.GetWorkers(0).First();
+
             Assert.True(
                 actualStreetDto.Id == 1
                 && actualStreetDto.Name == "TestN"
             );
         }
+
+   
         IWorkerService GetWorkerService()
         {
             var mockContext = new Mock<IUnitOfWork>();
+
             var expectedWorker = new Worker()
             {
                 Id = 1,
